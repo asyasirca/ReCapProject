@@ -58,7 +58,8 @@ namespace DataAccess.Concrete.InMemory
 
         public List<Car> GetAllByBrandName(int brandId)
         {
-            return _cars.Where(c => c.BrandId == brandId).ToList();//where koşulu içindeki şarta uyan tüm elemanları yeni bir liste haline getirir
+            return _cars.Where(c => c.BrandId == brandId).ToList();
+            //where koşulu içindeki şarta uyan tüm elemanları yeni bir liste haline getirir
             //ve onu döndürür.
         }
 
