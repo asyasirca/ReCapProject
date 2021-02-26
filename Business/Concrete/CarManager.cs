@@ -37,10 +37,6 @@ namespace Business.Concrete
             return _carDal.GetAll();
         }
 
-        public object GetCarDetails()
-        {
-            throw new NotImplementedException();
-        }
 
         public List<Car> GetAllByBrandId(int id)
         {
@@ -53,14 +49,16 @@ namespace Business.Concrete
             return _carDal.GetAll(c => c.DailyPrice >= min && c.DailyPrice <= max);
         }
 
+        public List<CarDetailDto> GetCarDetails()
+        {
+            return _carDal.GetCarDetails();
+        }
+
         public List<Car> GetCarsByColorId(int id)
         {
             return _carDal.GetAll(c => c.ColorId == id);
         }
 
-        List<CarDetailDto> ICarService.GetCarDetails()
-        {
-            return _carDal.GetCarDetails();
-        }
+
     }
 }
