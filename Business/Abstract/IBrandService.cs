@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Business.Abstract
 {
-    interface IBrandService
+    public interface IBrandService
     {
         List<Brand> GetAll();
         Brand GetById(int BrandId);
