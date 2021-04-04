@@ -5,7 +5,7 @@ using System.Text;
 namespace Core.Utilities.Results
 {
     //temel voidler için başlangıç.unutmaa!!
-    public interface IResult
+    public interface IDataResult
     {
         bool Success { get; }//get sadece okunabilir demek
         //yapmaya çalıştığın ekleme işi başarılı:true

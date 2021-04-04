@@ -11,7 +11,7 @@ namespace Core.Utilities.Results
 
         }
 
-        public SuccessDataResult(T data, bool v) : base(data, true)
+        public SuccessDataResult(T data) : base(data, true)
         {
 
         }
@@ -25,5 +25,6 @@ namespace Core.Utilities.Results
         {
 
         }
+
     }
 }

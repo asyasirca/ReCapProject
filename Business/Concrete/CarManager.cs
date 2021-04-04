@@ -26,7 +26,7 @@ namespace Business.Concrete
 
         public EfCarDal EfCarDal { get; }
 
-        public IResult Add(Car car)
+        public IDataResult Add(Car car)
         {
             if (car.BrandName.Length < 2)
             {
@@ -82,7 +82,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.ColorId == id), Messages.CarsListed);
         }
 
-        public IResult Update(Car car)
+        public IDataResult Update(Car car)
         {
             throw new NotImplementedException();
         }

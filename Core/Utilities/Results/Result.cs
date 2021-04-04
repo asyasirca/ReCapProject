@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Core.Utilities.Results
 {
-    public class Result : IResult
+    public class Result : IDataResult
     {
 
         public Result(bool success, string message) : this(success)//this bu class yani result classı demek

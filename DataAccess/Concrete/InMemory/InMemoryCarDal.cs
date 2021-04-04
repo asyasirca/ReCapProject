@@ -37,7 +37,7 @@ namespace DataAccess.Concrete.InMemory
 
         public void Delete(Car car)//ürün sileriz
         {
-            Car carToDelete =  _cars.SingleOrDefault(c => c.CarId == car.CarId);//linq ile..singleordefault id ile aramalarda kullanılır
+            Car carToDelete = _cars.SingleOrDefault(c => c.CarId == car.CarId);//linq ile..singleordefault id ile aramalarda kullanılır
 
             _cars.Remove(carToDelete);
         }

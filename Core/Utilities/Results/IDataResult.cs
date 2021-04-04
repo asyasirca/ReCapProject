@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Core.Utilities.Results
 {
-    public interface IDataResult<T> : IResult
+    public interface IDataResult<T> : IDataResult
     {
         T Data { get; }
     }
